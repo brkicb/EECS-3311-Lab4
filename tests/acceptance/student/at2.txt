@@ -1,0 +1,13 @@
+new_game("bob", "billy")
+play("bob", 1)
+play("billy", 2)
+play("bob", 5)
+play("billy", 7)
+play("bob", 9)
+-- bob wins
+play_again
+play("billy", 1)
+undo
+undo
+play("billy", 1)
+

@@ -1,0 +1,21 @@
+new_game("", "")
+new_game("bob", "$%")
+undo
+new_game("bob", "billy")
+play("bob", 1)
+play("billy", 1)
+-- handle error
+play("billy", 4)
+play("bob", 2)
+play("billy", 5)
+play("bob", 3)
+-- bob wins
+undo
+redo
+play_again
+undo
+play("billy", 1)
+new_game("", "")
+undo
+new_game("a", "b")
+

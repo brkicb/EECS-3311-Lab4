@@ -1,0 +1,33 @@
+-- testing undo and redo and also
+-- how program handles more undoing
+-- and redoing than can be done
+new_game("bob", "billy")
+play("bob", 3)
+play("billy", 2)
+play("bob", 5)
+play("billy", 4)
+undo
+play("billy", 7)
+play("bob", 1)
+play("billy", 9)
+play("bob", 8)
+play("billy", 4)
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+redo
+redo
+redo
+redo
+redo
+redo
+redo
+redo
+redo
+

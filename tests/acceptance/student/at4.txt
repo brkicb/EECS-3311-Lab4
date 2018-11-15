@@ -1,0 +1,29 @@
+-- testing weird inputs to see if
+-- it will be handled the same as
+-- the oracle
+new_game("bob", "billy")
+play("bob", 3)
+play("billy", 2)
+play("bob", 5)
+play("billy", 4)
+undo
+play("billy", 7)
+play("bob", 1)
+play("billy", 9)
+play("bob", 8)
+play("billy", 4)
+play("bob", 6)
+-- tie game
+undo
+undo
+redo
+play_again
+undo
+undo
+redo
+new_game("", "$")
+undo
+new_game("a", "b")
+undo
+play("a", 1)
+
